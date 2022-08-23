@@ -8,7 +8,12 @@ public class Program
     public static async Task Main(string[] args)
     {
         var host = CreateHostBuilder(args).Build();
-        await host.Services.GetRequiredService<DbContext>().Database.EnsureCreatedAsync();
+        // await host.Services
+        //     .CreateScope()
+        //     .ServiceProvider
+        //     .GetRequiredService<DbContext>()
+        //     .Database
+        //     .EnsureCreatedAsync();
         await host.RunAsync();
     }
     

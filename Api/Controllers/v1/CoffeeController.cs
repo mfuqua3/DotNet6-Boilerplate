@@ -8,9 +8,5 @@ public class CoffeeController : ApiController
 {
     [HttpGet]
     [AllowAnonymous]
-    public IActionResult BrewCoffee()
-    {
-        throw new ServerIsTeapotException();
-    }
-    
+    public IActionResult BrewCoffee() => throw new ServerIsTeapotException();
 }
