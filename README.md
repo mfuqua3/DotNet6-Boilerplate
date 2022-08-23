@@ -65,11 +65,11 @@ On startup, the application will initialize the database(s) using Entity Framewo
 ```
 ###### Connection string example for Windows SQL Server instance
 ```json
-"DefaultConnection": "Data Source=localhost;Database=MIRT;Trusted_Connection=True;"
+"DefaultConnection": "Data Source=localhost;Database=MyDatabase;Trusted_Connection=True;"
 ```
 ###### Connection string example for Docker Container SQL Server instance
 ```json
-"DefaultConnection": "Server=localhost,1433;Database=MIRT;User=sa;Password=<YOUR PASSWORD>;"
+"DefaultConnection": "Server=localhost,1433;Database=MyDatabase;User=sa;Password=<YOUR PASSWORD>;"
 ```
 
 ### Modifying the Database
