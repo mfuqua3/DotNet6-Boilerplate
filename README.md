@@ -34,10 +34,10 @@ Duplicate the `appsettings.json` file at the root of the `%PROJECTNAME%.Api` pro
     }
   },
   "ConnectionStrings": {
-    "DefaultConnection": "Data Source=localhost;Database=%PROJECTNAME%;Trusted_Connection=True;"
+    "DefaultConnection": ""
   },
   "JwtBearer": {
-    "Authority": "https://sts.windows.net/9297e4c4-aec3-4611-bdfe-1a2ee661384d/"
+    "Authority": ""
   },
   "Serilog": {
     "WriteTo": [
