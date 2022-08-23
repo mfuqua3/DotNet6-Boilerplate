@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  server:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+        - CONFIGURATION=Debug
+    ports:
+      - "5291:5291"
+    stdin_open: true # -i
+    tty: true # -t
+    environment:
+      ConnectionStrings:DefaultConnection: ""
+      ASPNETCORE_ENVIRONMENT: "Development"
+      PORT: 5291
