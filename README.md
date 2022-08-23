@@ -17,8 +17,6 @@
 ## Getting Started
 This project has the following system dependencies.
 - .NET 6.0 SDK ([Installers](https://dotnet.microsoft.com/en-us/download/dotnet/6.0))
-- MS SQL Server ([Windows](https://www.microsoft.com/en-us/sql-server/sql-server-downloads))
-    - Mac/Linux Users can run a SQL server instance in a Docker Container [Instructions](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash)
 
 ## Configuration
 
