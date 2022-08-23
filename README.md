@@ -441,14 +441,14 @@ Between layers, pass only
 Data Contracts and Entities should not contain business logic, as this logic would cross layers
 and break encapsulation.
 
-1. _Clients_ **do not** call multiple _Services_ in a single use case.
+1. _Clients_ **do not** call multiple _Managers_ in a single use case.
 2. _Clients_ **do not** call _Engines_
 3. _Services_ **do not** queue calls to more than one _Service_ in a single use case.
 4. _Engines_ **do not** receive queued calls.
 5. _Data Access_ components **do not** receive queued calls.
 6. _Clients_ **do not** publish events.
 7. _Engines_ **do not** publish events.
-8. __Data Access__ components **do not** publish events.
+8. _Data Access_ components **do not** publish events.
 9. _Engines_, and _Data Access_ **do not** subscribe to events.
 10. _Engines_ **never** call each other.
 11. _Data Access_ components **never** call each other.
